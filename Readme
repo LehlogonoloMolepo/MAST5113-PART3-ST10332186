@@ -1,0 +1,37 @@
+Here’s a list of changes and new features implemented from Part 2 to Part 3:
+
+ 1. Display Average Price by Course
+   - Added functionality to calculate and display the average price of menu items, categorized by course (e.g., Starters, Mains, Dessert).
+   - This required a new function, `averagePriceByCourse`, which filters items by course, calculates the total price, and then computes the average.
+
+ 2. New Screen for Adding and Removing Menu Items
+   - Moved the "Add Menu Item" feature from the home screen to a new, dedicated screen (e.g., `MenuItemScreen`).
+   - This new screen allows the chef to add items to the menu and also remove items from it.
+   - Added navigation functionality to move between the home screen and the new add/remove item screen.
+
+ 3. Remove Items from the Menu
+   - Implemented a way for the chef to remove individual items from the menu list.
+   - This involves adding a `removeItem` function, which removes an item by filtering out the selected item from the list.
+   - Added a delete button or icon next to each item in the list on the `MenuItemScreen` for easy removal.
+
+ 4. Guest View with Course Filtering
+   - Created a separate screen (e.g., `GuestScreen`) where guests can view the menu items.
+   - Added a filter option on the guest screen to allow users to filter items by course, displaying only the selected course (e.g., only Starters, Mains, or Desserts).
+   - Implemented a dropdown or picker that allows guests to select a course and view only items within that category.
+
+ 5. Enhanced Code Organization and Modularity
+   - Refactored and organized code by defining key functions for adding, removing, filtering, and calculating averages to improve modularity and readability.
+   - Created reusable functions to handle core tasks such as calculating averages, filtering items, and adding/removing items.
+   - Used functions in TypeScript to keep the code organized and improve reusability.
+
+ 6. Use of TypeScript Loops and Statements
+   - Incorporated loops and conditional statements as required:
+      - `for` loops and `reduce` functions to calculate averages.
+      - Conditional statements (`if` statements) to validate form inputs before adding items to the menu.
+      - Global state management was implemented (or suggested via context or state libraries) for storing and updating menu items in a way that can be accessed by multiple screens.
+
+ 7. Global State and Functions
+   - Suggested or implemented a shared state (e.g., using React Context API or a state management library like Redux) to handle menu items across multiple screens.
+   - Ensured that functions like `addItem`, `removeItem`, and `averagePriceByCourse` can access and modify the global list of menu items, making them accessible across different screens.
+
+
